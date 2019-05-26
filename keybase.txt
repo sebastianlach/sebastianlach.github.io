@@ -1,0 +1,66 @@
+==================================================================
+https://keybase.io/slach
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://slach.eu
+  * I am slach (https://keybase.io/slach) on keybase.
+  * I have a public key with fingerprint C341 BC0D 9AB9 DBFE 665C  8168 E41D 4709 7BDF E869
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101a23695b32f99486c614bab17c9a33d11fe1546fe3b216af92ac3c7525dfd295e0a",
+      "fingerprint": "c341bc0d9ab9dbfe665c8168e41d47097bdfe869",
+      "host": "keybase.io",
+      "key_id": "e41d47097bdfe869",
+      "kid": "0101a23695b32f99486c614bab17c9a33d11fe1546fe3b216af92ac3c7525dfd295e0a",
+      "uid": "72c078c0e5df39569aa2150ac753ec19",
+      "username": "slach"
+    },
+    "service": {
+      "hostname": "slach.eu",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1558840297,
+  "expire_in": 157680000,
+  "prev": "e1c86baec1fc73a640ee526b5310b9521414a5a788a6d861907c79d2ef8707b0",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUltIVUEUveqV1BAiKjM06EQFpXLmPOacudWHQUhFLwmFCC8zc+bce1DPvd6H
+ZaZgZiT0EKTo8WMWWRGVVGAP1OwrzBT6UBMzKyotTCHsYdyaIwV99Nn8bGbttfZe
+e7MbUhNcSXFvMvOSK0feW3HdY8S1ZzzhU6VAAkaF4KkUitlsYCUGC0e8xZYheAQR
+iABLMkQqkSUTIUWHFAKFYAI0irAsGwCYDKgKNJlMJACxiSRMZaqpkmqYhoRUJmIh
+SzAt28dCwZBlR3hZKiuAUNFAmCCDmAxCleoA6kwBhqKJSCOGyXSIuNAfCDsKbo7g
+MMuxAhzjH++svX/w/7Pv6Gw5TaKiplOR8ZyMVIgwloAqYk6XGQVO32iYhWxcyjg7
+XIKpX6jKEjhUblHmbNUZ4+90DotyUTAUiARooISj/kgk6HFEkYqgw9rLiPe33kss
+2+D744JyFgpbAVvwAM6kEcspCFRV1xVRQlqWwPYFrRDzWg5D1aAu8ue0YeXOtgDV
+IcHcsEk1Ge+AisiYKkGiykAkSJWAAhSsYk3XMTR0CJCoUQ0ZEjN1TdSIKDgjldkB
+wYO4T+xzhrF8No5EQ0yoSqmPk92uuCRX5qJl7ke5D1LP3h2KmXtq/H9uLjHeOThX
+SvK8P4h7YZKrNt6Vbgw0rb0982L+6MwVac348yV9HY8+1BfFT2e1Dkb7sptLw/d+
+FNyZm3n6sZ1+ru2ruxDsvNLQvd0qGG+v6u2pWbW/+urX5smWM5sLanIbvIll+250
+faldnWLntWbEGhcP54W3D32ckXeRHm3q2taxoqfZwxul3B1p7rT6A72VK49M35ya
++FwlPc4/DDsWDFYvWx67P/Fs18qMktEnteszBnLW7Z5Jvb5pTvzBsYqmS0cv5J3e
+krnh5IptJ16N+A71TBaqoz56/Paxzv53dbfOTn//1tORcNF/LtbQn9HY1dLmBacu
+P7z8tull7PWC86zOKxzoX5pa315oWHWdT3/OyS/7BQ==
+=C2gq
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/slach
+
+==================================================================
