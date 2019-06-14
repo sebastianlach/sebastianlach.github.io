@@ -1,4 +1,4 @@
-# slach.eu
+# eu.slach.github.io
 
 A static website.
 
