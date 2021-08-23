@@ -1,0 +1,501 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[10pt]{article}
+
+\usepackage{calc}
+\usepackage[english,polish]{babel}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+\usepackage{verbatim} 
+
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{1em}
+\newlength{\bibsep}
+ {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+\newenvironment{bibsection}
+        {\vspace{-\baselineskip}\begin{list}{}{
+       \setlength{\leftmargin}{\bibhang}
+       \setlength{\itemindent}{-\leftmargin}
+       \setlength{\itemsep}{\bibsep}
+       \setlength{\parsep}{\z@}
+        \setlength{\partopsep}{0pt}
+        \setlength{\topsep}{0pt}}}
+        {\end{list}\vspace{-.6\baselineskip}}
+\makeatother
+
+\reversemarginpar % Layout: Puts the section titles on left side of page
+\usepackage[paper=a4paper, marginparwidth=30.5mm, marginparsep=1.5mm, margin=25mm, includemp]{geometry}
+
+\setlength{\parindent}{0in}
+
+\usepackage{paralist}
+
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\fancyhf{}\renewcommand{\headrulewidth}{0pt}
+\fancyfootoffset{\marginparsep+\marginparwidth}
+\newlength{\footpageshift}
+\setlength{\footpageshift}{0.5\textwidth+0.5\marginparsep+0.5\marginparwidth-2in}
+\lfoot{\hspace{\footpageshift} \parbox{4in}{\, \hfill Page \arabic{page} of \protect\pageref*{LastPage} \hfill \,}}
+
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks, linkcolor=darkblue,urlcolor=darkblue, anchorcolor=darkblue,citecolor=darkblue}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\makeheading}[1]%
+        {\hspace*{-\marginparsep minus \marginparwidth}%
+         \begin{minipage}[t]{\textwidth+\marginparwidth+\marginparsep}%
+                {\large \bfseries #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+
+\renewcommand{\section}[2]%
+        {\pagebreak[3]\vspace{1.3\baselineskip}%
+         \phantomsection\addcontentsline{toc}{section}{#1}%
+         \hspace{0in}%
+         \marginpar{
+         \raggedright \scshape #1}#2}
+
+\newenvironment{outerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1]}{\end{itemize}%
+         \vspace{-.6\baselineskip}}
+
+\newenvironment{lonelist}[1][\enskip\textbullet]%
+        {\vspace{-\baselineskip}\begin{list}{#1}{%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{list}\vspace{-.6\baselineskip}}
+
+\newenvironment{innerlist}[1][\enskip\textbullet]%
+        {\begin{compactitem}[#1]}{\end{compactitem}}
+
+\newenvironment{loneinnerlist}[1][\enskip\textbullet]%
+        {\vspace{-\baselineskip}\begin{compactitem}[#1]}
+        {\end{compactitem}\vspace{-.6\baselineskip}}
+
+\newcommand{\blankline}{\quad\pagebreak[2]}
+
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+
+\providecommand*\url[1]{\href{#1}{#1}}
+\renewcommand*\url[1]{\href{#1}{\texttt{#1}}}
+
+\providecommand*\email[1]{\href{mailto:#1}{#1}}
+
+\renewcommand{\thefootnote}{*}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\makeheading{Sebastian J.~Łach}
+
+\section{Contact Details}
+\begin{minipage}[t]{0.50\linewidth}
+Rydygiera 19/18 \\
+Cracow 30-695 \\
+Poland
+\end{minipage}
+\begin{minipage}[t]{0.50\linewidth}
+\textsc{Phone:} (+48) 695 489 067 \\
+\textsc{E-mail:} \email{root@slach.eu} \\
+\textsc{Website:} \href{http://www.slach.eu/}{www.slach.eu}
+\end{minipage}
+
+\section{Date of Birth}
+25th March 1991, Cracow
+
+\section{Citizenship}
+Polish
+
+\section{Linkedin}
+\doilink{https://www.linkedin.com/in/sebastianlach}
+
+\section{Github}
+\doilink{https://github.com/sebastianlach}
+
+\section{Bitbucket}
+\doilink{https://bitbucket.org/slach}
+
+\section{Professional Experience}
+
+\textbf{Owner} at \href{http://www.slach.eu/}{\textsc{Slach Europe}} \hfill \textit{January 2021 - present} \\
+\textit{Náchod, Czech Republic} 
+\hfill \href{http://www.slach.eu/}{\textit{www.slach.eu}} 
+\vspace{0.1in}
+\begin{innerlist}
+\item designing software architecture
+\item developing C++ software
+\item developing PHP software
+\item developing Python software
+\item developing Java software
+\item developing JavaScript software
+\item maintaining servers
+\item handling DevOps aspects
+\end{innerlist}
+
+\vspace{0.30in}
+
+\textbf{Senior Python Developer} \textit{at} \href{https://www.skyconcept.pl}{\textsc{SkyConcept}} \hfill \textit{June 2020 - November 2020} \\
+\textit{Cracow, Poland} 
+\hfill \href{https://www.skyconcept.pl}{\textit{www.skyconcept.pl}}
+\vspace{0.1in}
+\begin{innerlist}
+\item designing software architecture
+\item developing Python software
+\item automating software testing
+\item reviewing & refactoring source code
+\item providing technical documentation
+\item providing technical support
+\item maintaining servers
+\end{innerlist}
+
+\vspace{0.30in}
+
+
+\vspace{0.30in}
+
+\textbf{Techinal Lead Developer} \textit{at} \href{https://www.solarwinds.com}{\textsc{SolarWinds}} \hfill \textit{May 2019 - July 2019} \\
+\textit{Cracow, Poland} 
+\hfill \href{https://www.solarwinds.com}{\textit{www.solarwinds.com}}
+\vspace{0.1in}
+\begin{innerlist}
+\item leading development team
+\item designing software architecture
+\item developing Python software
+\item automating software testing
+\item reviewing & refactoring source code
+\item providing technical documentation
+\item providing technical support
+\item maintaining servers
+\item handling DevOps aspects
+\end{innerlist}
+
+\vspace{0.30in}
+
+\textbf{Senior Python Developer} \textit{at} \href{https://www.flyrlabs.com}{\textsc{FlyR}} \hfill \textit{January 2019 - March 2019} \\
+\textit{Cracow, Poland}
+\hfill \href{https://www.flyrlabs.com}{\textit{www.flyrlabs.com}}
+\vspace{0.1in}
+\begin{innerlist}
+\item designing software architecture
+\item developing Python software
+\item automating software testing
+\item reviewing & refactoring source code
+\item providing technical documentation
+\item providing technical support
+\item maintaining servers
+\item handling DevOps aspects
+\end{innerlist}
+
+\vspace{0.30in}
+
+\textbf{Software Developer} \textit{at} \href{https://www.leanlab.pl/}{\textsc{LeanLAB}} \hfill \textit{November 2018 - December 2018} \\
+\textit{Cracow, Poland} 
+\hfill \href{https://www.leanlab.pl/}{\textit{www.leanlab.pl}} 
+\vspace{0.1in}
+\begin{innerlist}
+\item designing software architecture
+\item developing Python software
+\item reviewing \& refactoring source code
+\item providing technical documentation 
+\item providing technical support
+\end{innerlist}
+
+\textbf{Owner} at \href{http://www.slach.eu/}{\textsc{Sebastian Łach}} \hfill \textit{October 2017 - May 2018} \\
+\textit{Cracow, Poland} 
+\hfill \href{http://www.slach.eu/}{\textit{www.slach.eu}} 
+\vspace{0.1in}
+\begin{innerlist}
+\item designing software architecture
+\item developing C++ software
+\item developing PHP software
+\item developing Python software
+\item developing Java software
+\item developing JavaScript software
+\item maintaining servers
+\item handling DevOps aspects
+\end{innerlist}
+
+\vspace{0.30in}
+
+\textbf{Owner} at \href{http://www.slach.eu/}{\textsc{Sebastian Łach}} \hfill \textit{October 2016 - January 2017} \\
+\textit{Cracow, Poland} 
+\hfill \href{http://www.slach.eu/}{\textit{www.slach.eu}} 
+\vspace{0.1in}
+\begin{innerlist}
+\item designing software architecture
+\item developing C++ software
+\item developing PHP software
+\item developing Python software
+\item developing Java software
+\item developing JavaScript software
+\item maintaining servers
+\item handling DevOps aspects
+\end{innerlist}
+
+\vspace{0.30in}
+
+\textbf{Owner} at \href{http://www.slach.eu/}{\textsc{Sebastian Łach}} \hfill \textit{July 2016 - September 2016} \\
+\textit{Cracow, Poland} 
+\hfill \href{http://www.slach.eu/}{\textit{www.slach.eu}} 
+\vspace{0.1in}
+\begin{innerlist}
+\item designing software architecture
+\item developing C++ software
+\item developing PHP software
+\item developing Python software
+\item developing Java software
+\item developing JavaScript software
+\item maintaining servers
+\item handling DevOps aspects
+\end{innerlist}
+
+\pagebreak
+
+\textbf{Software Developer} \textit{at} \href{http://indoo.rs/}{\textsc{Indoo.rs}} \hfill \textit{January 2016 - July 2016} \\
+\textit{Vienna, Austria} 
+\hfill \href{http://indoor.rs/}{\textit{indoo.rs}} 
+\vspace{0.1in}
+\begin{innerlist}
+\item designing software architecture
+\item developing Python software
+\item developing Java software
+\item automating software testing
+\item reviewing \& refactoring source code
+\item providing technical documentation 
+\item providing technical support
+\item maintaining servers
+\item handling DevOps aspects
+\end{innerlist}
+
+\vspace{0.30in}
+
+\textbf{Software Developer} \textit{at} \href{http://www.grandparade.co.uk/}{\textsc{Grand Parade}} \hfill \textit{June 2015 - September 2015} \\
+\textit{Cracow, Poland} 
+\hfill \href{http://www.grandparade.co.uk/}{\textit{www.grandparade.co.uk}} 
+\vspace{0.1in}
+\begin{innerlist}
+\item leading development team
+\item designing software architecture
+\item developing Python software
+\item automating software testing
+\item reviewing \& refactoring source code
+\item providing technical documentation 
+\item providing technical support
+\item maintaining servers
+\item handling DevOps aspects
+\end{innerlist}
+
+\vspace{0.30in}
+
+\textbf{Owner} at \href{http://www.slach.eu/}{\textsc{Sebastian Łach}} \hfill \textit{June 2014 - January 2016} \\
+\textit{Cracow, Poland} 
+\hfill \href{http://www.slach.eu/}{\textit{www.slach.eu}} 
+\vspace{0.1in}
+\begin{innerlist}
+\item designing software architecture
+\item developing C++ software
+\item developing PHP software
+\item developing Python software
+\item developing Java software
+\item developing JavaScript software
+\item maintaining servers
+\item handling DevOps aspects
+\end{innerlist}
+
+\vspace{0.30in}
+
+\textbf{Co Founder} at \href{https://www.tokenizer.com/}{\textsc{Tokenizer}} \hfill \textit{April 2014 - May 2018} \\
+\textit{The Hague, Netherlands}
+\hfill \href{https://www.tokenizer.com/}{\textit{www.tokenizer.com}} 
+\vspace{0.1in}
+\begin{innerlist}
+\item researching multi-factor authentications \& authorizations solutions
+\item designing multi-factor authentications \& authorizations software
+\item designing software architecture
+\item leading development team
+\item developing Python software
+\item developing Java software
+\item automating software testing
+\item reviewing \& refactoring source code
+\item providing technical documentation
+\item providing technical support
+\item maintaining servers
+\item handling DevOps aspects
+\end{innerlist}
+
+\pagebreak
+
+\textbf{Lead Developer} at \href{http://amsterdamstandard.pl/}{\textsc{Amsterdam Standard}} 
+\hfill \textit{January 2012 - May 2015} \\
+\textit{Cracow, Poland}
+ \hfill \href{http://amsterdamstandard.pl/}{\textit{www.amsterdamstandard.pl}} 
+ \vspace{0.1in}
+\begin{innerlist}
+\item leading development team
+\item designing software architecture
+\item developing Python software
+\item developing Java software
+\item developing Android software
+\item automating software testing
+\item reviewing \& refactoring source code
+\item providing technical documentation 
+\item providing technical support
+\item maintaining servers
+\item handling DevOps aspects
+\end{innerlist}
+
+\vspace{0.30in}
+
+\textbf{Lead Developer} at \href{http://www.bluepaprica.com/}{\textsc{BluePaprica}} 
+\hfill \textit{March 2011 - December 2011} \\
+\textit{Cracow, Poland} 
+\hfill \href{http://www.bluepaprica.com/}{\textit{www.bluepaprica.com}} 
+\vspace{0.1in}
+\begin{innerlist}
+\item leading development team
+\item designing software architecture
+\item developing PHP software
+\item developing JavaScript software
+\item reviewing \& refactoring source code
+\item providing technical documentation 
+\item providing technical support
+\item maintaining servers
+\end{innerlist}
+
+\vspace{0.30in}
+
+\textbf{Software Developer} at \href{http://www.adfinem.co.uk/}{\textsc{AdFinem Limited}} 
+\hfill \textit{May 2007 - October 2010} \\
+\textit{Cracow, Poland} 
+\hfill \href{http://www.adfinem.co.uk/}{\textit{www.adfinem.co.uk}} 
+\vspace{0.1in}
+\begin{innerlist}
+\item designing software architecture
+\item developing PHP software
+\item developing JavaScript software
+\item reviewing \& refactoring source code
+\item providing technical documentation 
+\item providing technical support
+\item maintaining servers
+\end{innerlist}
+
+\vspace{0.30in}
+
+\textbf{Software Developer} at \href{http://www.coolpage.pl/}{\textsc{Coolpage}}
+\hfill \textit{January 2006 - February 2008} \\
+\textit{Cracow, Poland} 
+\hfill \href{http://www.coolpage.pl/}{\textit{www.coolpage.pl}} 
+\vspace{0.1in}
+\begin{innerlist}
+\item designing software architecture
+\item developing PHP software
+\item developing JavaScript software
+\item reviewing \& refactoring source code
+\item providing technical documentation 
+\item providing technical support
+\item maintaining servers
+\end{innerlist}
+
+\pagebreak
+
+\section{Technical}
+
+\textbf{Industry Knowledge:}
+\begin{innerlist}
+\item[]
+Software Engineering, Test Driven Development, Behaviour Driven Development, Continuous Integration, Agile Methodologies, Scrum Methodologies, Lean Methodologies, Unified Modeling Language, Design Patterns, Web Services, High Availability, Scalability.
+\end{innerlist}
+\vspace{0.1in}
+
+\textbf{Programming Languages:}
+\begin{innerlist}
+\item[]
+Python, Java, PHP, JavaScript, C++, C, Bash.
+\end{innerlist}
+\vspace{0.1in}
+
+\textbf{Platforms:}
+\begin{innerlist}
+\item[]
+Arch Linux, Debian, CentOS, Android.
+\end{innerlist}
+\vspace{0.1in}
+
+\textbf{Frameworks:}
+\begin{innerlist}
+\item[]
+Pyramid, Django, Tornado, Flask, Zend, OpenGL, jQuery.
+\end{innerlist}
+\vspace{0.1in}
+
+\textbf{Web Technologies:}
+\begin{innerlist}
+\item[] HTML, XHTML, CSS.
+\end{innerlist}
+\vspace{0.1in}
+
+\textbf{Version Control Systems:}
+\begin{innerlist}
+\item[] Git, Mercurial, Subversion.
+\end{innerlist}
+\vspace{0.1in}
+
+\textbf{SQL Databases:}
+\begin{innerlist}
+\item[]PostgreSQL, MySQL, SQLite.
+\end{innerlist}
+\vspace{0.1in}
+
+\textbf{NoSQL Databases:}
+\begin{innerlist}
+\item[] Redis, Elasticsearch, Neo4j, MongoDB, Memcached, Amazon DynamoDB.
+\end{innerlist}
+\vspace{0.1in}
+
+\textbf{Provisioning, Automation, Deployment \& Operations:}
+\begin{innerlist}
+\item[] Docker, Ansible, Fabric, Puppet, DevOps.
+\end{innerlist}
+\vspace{0.1in}
+
+\textbf{Cloud Computing:}
+\begin{innerlist}
+\item[] Amazon Web Services, Google Cloud Platform, Kubernetes, MapReduce.
+\end{innerlist}
+\vspace{0.1in}
+
+\section{Education}
+\textbf{Jagiellonian University} \hfill \textit{2011 - 2012}
+\begin{innerlist}
+\item[] \textit{Profile:} Computer Science
+\end{innerlist}
+\blankline
+
+\textbf{AGH University of Science and Technology} \hfill \textit{2010 - 2011}
+\begin{innerlist}
+\item[] \textit{Profile:} Computer Science
+\end{innerlist}
+
+\section{Languages}
+\begin{innerlist}
+\item \textbf{English} - professional working proficiency
+\item \textbf{Polish} - native proficiency
+\end{innerlist}
+
+\section{Awards} 
+Finalist in Polish Olympiad in Informatics \hfill \textit{Sopot, 5th April 2008} 
+
+\section{Consent clause}
+I consent to the processing of my personal data for the purposes necessary for the
+recruitment process as well as future recruitments.
+
+\end{document}
