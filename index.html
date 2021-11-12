@@ -19,8 +19,7 @@
                 margin: 0px 0px;
                 padding: 0px 0px;
                 font-family: monospace;
-                font-size: 14pt;
-                font-weight: bold;
+                font-size: 12px;
             }
             div {
                 display: block;
@@ -33,24 +32,31 @@
             }
             div#sidebar {
                height: 100%;
-               width: 21%;
-               padding: 0% 2%;
+               min-height: 600px;
+               width: 220px;
+               padding-left: 32px;
+               padding-right: 32px;
+               margin-right: 16px;
                background-color: black;
                color: white;
+               font-size: 16px;
+               font-weight: bold;
             }
-            div#sidebar img {
-                margin: 32px 0px;
+            div#sidebar img.logo {
                 width: 80%;
                 padding: 10% 10%;
             }
+            div#footer {
+                display: flex;
+                align-items : center;
+                margin-top: 32px;
+            }
             div#container {
-               width: 71%;
-               padding: 0% 2%;
+               width: 600px;
             }
             div#container .section {
                 width: 100%;
                 clear: both;
-                margin: 32px 0px;
             }
             div.menu {
                 clear: both;
@@ -69,30 +75,32 @@
         <div id="sidebar">
             <div class="clear">
                 <a href="/">
-                    <img src="static/images/logo.png" alt="Logo" />
+                    <img class="logo" src="./black.png" alt="Logo" />
                 </a>
             </div>
             <div class="menu">INDEX</div>
             <div class="menu">ARCHSTRAP</div>
             <div class="menu">BOOTSTRAP</div>
             <div class="menu">SILKROADS</div>
-            <div class="clear">
-                <div>
-                    <span style="font-size: 64pt">&copy;</span>
-                </div>
-                <div style="padding: 36px 24px">
-                    <span style="font-size: 12pt">
-                        2021 &bull;
+            <div id="footer">
+                   <img src="./copyright.svg" />
+                    <span style="font-size: 12px">
+                        2021
                         &lt;root@slach.eu&gt;
                     </span>
-                </div>
             </div>
         </div>
 
 
         <div id="container">
             <div class="section">
-                <img src="http://ghchart.rshah.org/slach-europe" alt="Chart" />
+                 <h1>Accounts</h1>
+                 <table>
+                    <tr>
+                        <td>github.com</td>
+                        <td>https://github.com/slach-europe</td>
+                    </tr>
+                </table>
             </div>
          </div>
 
