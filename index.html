@@ -1,110 +1,169 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-    <head>
+<head>
 
-        <title>Slach</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <title>Slach</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-        <style type="text/css">
-            html {
-               width: 100%;
-               height: 100%;
-               margin: 0px 0px;
-               padding: 0px 0px;
-            }
-            body {
-                width: 100%;
-                height: 100%;
-                margin: 0px 0px;
-                padding: 0px 0px;
-                font-family: monospace;
-                font-size: 12px;
-            }
-            div {
-                display: block;
-                float: left;
-                margin: 0px 0px;
-                padding: 0px 0px;
-            }
-            div.clear {
-                clear: both;
-            }
-            div#sidebar {
-               height: 100%;
-               min-height: 600px;
-               width: 220px;
-               padding-left: 32px;
-               padding-right: 32px;
-               margin-right: 16px;
-               background-color: black;
-               color: white;
-               font-size: 16px;
-               font-weight: bold;
-            }
-            div#sidebar img.logo {
-                width: 80%;
-                padding: 10% 10%;
-            }
-            div#footer {
-                display: flex;
-                align-items : center;
-                margin-top: 32px;
-            }
-            div#container {
-               width: 600px;
-            }
-            div#container .section {
-                width: 100%;
-                clear: both;
-            }
-            div.menu {
-                clear: both;
-                width: 100%;
-                padding-top: 16px;
-                padding-bottom: 16px;
-                border-bottom-style: solid;
-                border-bottom-color: white;
-            }
-        </style>
+    <style type="text/css">
+        html {
+            margin: 0px 0px;
+            padding: 0px 0px;
+            height: 100%;
+        }
+        body {
+            height: 100%;
+            margin: 0px 0px;
+            padding: 0px 0px;
+            font-family: monospace;
+            font-size: 12px;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        div {
+            display: block;
+            float: left;
+            margin: 0px 0px;
+            padding: 0px 0px;
+        }
+        div.clear {
+            clear: both;
+        }
+        div#wrapper {
+            min-height: 100%;
+            background-color: black;
+        }
+        div#sidebar {
+            min-height: 100%;
+            width: 30%;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        div#sidebar div.wrapper {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+        div#sidebar img.logo {
+            width: 100%;
+            margin-top: 64px;
+            margin-bottom: 64px;
+        }
+        div#container {
+            width: 70%;
+            min-height: 100vh;
+            background-color: white;
+        }
+        div.menu {
+            clear: both;
+            width: 100%;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            border-bottom-style: solid;
+            border-bottom-color: white;
+        }
+        div.menu a {
+            color: white;
+        }
+        div#container div {
+            padding: 32px 32px;
+        }
+    </style>
 
-    </head>
+</head>
 
-    <body>
+<body>
+    <div id="wrapper">
 
         <div id="sidebar">
-            <div class="clear">
-                <a href="/">
-                    <img class="logo" src="./black.png" alt="Logo" />
-                </a>
-            </div>
-            <div class="menu">INDEX</div>
-            <div class="menu">ARCHSTRAP</div>
-            <div class="menu">BOOTSTRAP</div>
-            <div class="menu">SILKROADS</div>
-            <div id="footer">
-                <!--img src="./copyright.svg" /-->
-                <span style="font-size: 12px">
-                    &copy;
-                    2021 &bull;
-                    &lt;*@slach.eu&gt;
-                </span>
+            <div class="wrapper">
+
+                <div class="clear">
+                    <a href="/">
+                        <img class="logo" src="./black.png" alt="Logo" />
+                    </a>
+                </div>
+                <div class="menu">
+                    <a href="https://github.com/sebastianlach">
+                        GITHUB
+                    </a>
+                </div>
+                <div class="menu">
+                    <a href="https://www.linkedin.com/in/sebastianlach">
+                        LINKEDIN
+                    </a>
+                </div>
+                <div class="menu">
+                    <a href="https://github.com/sebastianlach/archstrap">
+                        ARCHSTRAP
+                    </a>
+                </div>
+                <div class="menu">
+                    <a href="https://github.com/sebastianlach/silkroads">SILKROADS</a>
+                </div>
             </div>
         </div>
 
-
         <div id="container">
-            <div class="section">
-                 <h1>Accounts</h1>
-                 <table>
-                    <tr>
-                        <td>github.com</td>
-                        <td>https://github.com/slach-europe</td>
-                    </tr>
-                </table>
+            <div style="font-weight: bold;">
+                -----BEGIN PGP PUBLIC KEY BLOCK-----<br />
+                mQINBF0D8iYBEAC/v5hCfi518MAPW2SaAFuGqf1mcsPIVITPOkdn9FmZCmuzLziR<br />
+                iPS2OFL7OfcW5ikQcBwOzuhpOwcVWBB8SFTPAIOBkFh7BTExABG9Mi84P2rVC2yz<br />
+                danNRZo0bD4S1ijAHePCFFOl84PGk2Fma6BDlujgX3NCJMeWz70vCGZ2TVAPdmt3<br />
+                YsK0Jpg9AEqZbDsMtGEca1S873tT0p/xUui8EPgYyLyexb6LSxQMR+SmPdBIAEKD<br />
+                3Ld+xNjl7+1S7FaH9EqPXSiQ5dQMCotaHYs4F3OVYAOzAKVXsqQrVxsqpPRK1eph<br />
+                mc6h1FN/zvIGXClHb8oILF+jsU9oH4bzFy3ZtDn9u1o+inHkDC9cX5ZpHWCm39yt<br />
+                /DBdgT3ARoQaf9S4w20L9S54vJZ09CqASDroBe+GhmZwK9tRcaOnqTmwxdvN4TsT<br />
+                Kb0ZC+YPJi7W7baVGl7fazPptJxGPuVWXOpmcd2YBQuMVsFGH6VF6bDcEZC530sC<br />
+                NIC1JVmN12FthSvtUgGYD6UNR/KGp1NlSkLxkaQahGQo7OPwQDI4EFO55jyosL7f<br />
+                ZW9rV+cCy0uBwDioh4wbC0x763WXikCSIfmAiYUI6e3Tn39mSE8BaHgK8TGyzO5F<br />
+                QJZ1NQ4sWSfpsOn6pFu5ffiviV3ltO/yY2iAQyJt5rMlQjYuokfSKudxowARAQAB<br />
+                tCxTZWJhc3RpYW4gxYFhY2ggKE1hc3RlciBLZXkpIDxyb290QHNsYWNoLmV1PokC<br />
+                TgQTAQgAOBYhBOYmOCDnMVAma+5xPUS4JIX/Pi51BQJdA/ImAhsDBQsJCAcCBhUK<br />
+                CQgLAgQWAgMBAh4BAheAAAoJEES4JIX/Pi51BFkP/24Mo+woUM+ctfyXjdfZKBug<br />
+                mQBgQtpN9ym6bJaLD0GPdzdfH/d+0/5vQe70RV5/8ez0nHhqj90wrkFS0RR9P6iY<br />
+                ofGSIfxo3ruJvO1gxUL6YqNTx2k94bg9y0fwo2JSsayngNIo2OMj2TCjZ2uvy8OM<br />
+                w8X8NH/VDZXpswh6zT0HHBowimYynd1GPSsHGkBIh0xfQ+Ah6E1CvT1V7R/VcB36<br />
+                STsxOw/HXosSosNrkHwKPOXWBlaNZngfp145yRiQDLa5jUqX05BhSytuy6FTvB9o<br />
+                VtIB2oCSrUDKTBcGY3jC2U1TsHHdG6U1PA186s9qlbUaEI2fhntLvDqZIDGPKGDB<br />
+                sNOxan4bwhhAJixULNp4/12jI+Mp8Nv+1mxlnFL51HZfv4+LwrRRuMfoQ8HfQibc<br />
+                mZtH4B4R74Z2mj4fuvzaa0u6sJSjdrI8dVrKXHI0PRs5ZT3N8cmjKl5yf+HyYXMq<br />
+                RN3Wey7UVI/wrcYYj12jtZpCowsrAATqNDr6TBmNq54ABUA4FS0YiBj3eHdWD6fc<br />
+                ojz7pUk64LmjNoo0/030rDfFKGJLIhiwZr47vcjjGoyHXuqi/hxDuNQjHGEZT2PM<br />
+                8vGuezKYDPy3ouGO943vFU1cLdGWefC3G0TaSbHrV1It1S4ib8ZV/FFRZC6mNtP/<br />
+                L5Wjhe8cHcc51BBr0D4JuQINBF0D8iYBEACk433OUaDh9XSoYHpRsAc62SZ1gGah<br />
+                3bGkFfEzSNyQ2YCUB/7BNz3Uyd4zNHNAcbdWdcz+QB1udHSBdEHzWPMvBsSPX+oM<br />
+                HBrzXhGNwfWSHggHda6qv85vLeA9xYdSiItHGuVv2ePbkgEIRadNfpsDPQSaxNq6<br />
+                5e5PFUqF8u2xg4OrsQsCzLqcVR2PWZWx3RAxuerBahY+RQuvNadgLj1r++k3PvUa<br />
+                ZDlxJXA/Z/lTF+rUnz7pt40mR+XWrq6wEmoN67Pg6qLui0uzOIpryymAFtQyhF8t<br />
+                s6PUUVI3+nAHcmnTUBFWJiYXGKVoqNwHbu/dKv5vnhpLMGZyfIdDWbKbAJ/V75M2<br />
+                Jtx7R0Y+bfgvoVWR49ACXstWDZw/zXe9yuOgeHb85y+FZDgZbsOAqoxJUxaxCwoL<br />
+                7lTxcfjTc6TuYTTFomi1bFv8lbp41hjy+P7UzHcfDGIJZpeIeyHrRn8t/tab1TEL<br />
+                TE8z9mQ/E3aQcW44kKPy/DvgUXSmcEtKmLd2ieg9mWNPyYp8XpFKCbmal3GlLOQX<br />
+                blaob0FdmLnm8nDwGb5TicDgHBcelSSFItxY4EI5n1i7WLxn3lMRfuyaQC7u2BXb<br />
+                qJBWXCrG0gMW686uJdPCU5TXdROILcLwn7hK5RUCzm1nt/RCiPrDiGC3CygR/B2K<br />
+                u39HSao7r9TpWQARAQABiQI2BBgBCAAgFiEE5iY4IOcxUCZr7nE9RLgkhf8+LnUF<br />
+                Al0D8iYCGwwACgkQRLgkhf8+LnXGag//TWPWTyzV0ukqHxJqMi0LWCBltC0p8PKC<br />
+                CPrnBjN9tQenjXaE90igiKgLh++6PSQKxVHEtFCxpuDg6fTzDy/0U9DNCtNQPEuG<br />
+                6+F7v9m1ici9BjxfLZCB0k9upYSH5evQQDW3wnazPrVaHB7HTQZv7DViwXcaoVRc<br />
+                BNlmTLBWuTfNimdXYJQlVH/kGO5WrQ53x45c/csZyN903aEkrA6cMGRfQnyzochA<br />
+                L3N2rdd+gZpbcLFztVENEl3cHeTihLohavsDBWx4eKy9IfnaZE6TB45pcKuW42rm<br />
+                bHPKc1nGJr6YWgYLt2Py3hrz4/lNG1YJw4wd9Ylvm0KlLUKyBYK5Gys4I/51/qOr<br />
+                6NFETX4Pe4o+nAX3kqLLX5KQervmQVJGZSAH5HLjLPggDcYm+g1xIL8rPbzvIDlP<br />
+                Iy8pUkoGrBxIzOY8QmfclRNCkoIFU+vNsK6/e/2LlBxzIJP63VZ3g/f80JvIn42B<br />
+                9hWx2z5bHWYz5XulUK9ND+Dw/+pfoi00wI4EQuTdhQW+kx/ZpYj7LBjtI157xyvH<br />
+                YbNwQrH6ifhZNwxs3SJmWNJ8mHsbqSc2JcAsPtCneErP+mo3/F+1t2PxR2BwKhz2<br />
+                V+SqOIkVHEQWONP0JbmKtjci8WmpvjogY6mNA+mShrbuza5xqpDvZKVUZVrb/uop<br />
+                3XR/a5FYiQs=<br />
+                =1MAk<br />
+                -----END PGP PUBLIC KEY BLOCK-----
             </div>
-         </div>
-
-    </body>
+        </div>
+    </div>
+</body>
 
 </html>
