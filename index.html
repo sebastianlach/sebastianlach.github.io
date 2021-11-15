@@ -3,17 +3,11 @@
 
 <head>
 
-    <title>Slach</title>
+    <title>www.slach.eu</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <style type="text/css">
-        html {
-            margin: 0px 0px;
-            padding: 0px 0px;
-            height: 100%;
-        }
-        body {
-            height: 100%;
+        html, body {
             margin: 0px 0px;
             padding: 0px 0px;
             font-family: monospace;
@@ -48,7 +42,7 @@
             padding-left: 32px;
             padding-right: 32px;
         }
-        div#sidebar img.logo {
+        div#sidebar img#logo {
             width: 100%;
             margin-top: 64px;
             margin-bottom: 64px;
@@ -57,6 +51,10 @@
             width: 70%;
             min-height: 100vh;
             background-color: white;
+            font-weight: bold;
+        }
+        div#container div {
+            padding: 32px 32px;
         }
         div.menu {
             clear: both;
@@ -66,11 +64,9 @@
             border-bottom-style: solid;
             border-bottom-color: white;
         }
-        div.menu a {
+        div.menu a, div.menu a:hover, div.menu:visited {
             color: white;
-        }
-        div#container div {
-            padding: 32px 32px;
+            text-decoration: none;
         }
     </style>
 
@@ -84,7 +80,7 @@
 
                 <div class="clear">
                     <a href="/">
-                        <img class="logo" src="./black.png" alt="Logo" />
+                        <img id="logo" src="./black.png" alt="logo" />
                     </a>
                 </div>
                 <div class="menu">
@@ -109,7 +105,7 @@
         </div>
 
         <div id="container">
-            <div style="font-weight: bold;">
+            <div>
                 -----BEGIN PGP PUBLIC KEY BLOCK-----<br />
                 mQINBF0D8iYBEAC/v5hCfi518MAPW2SaAFuGqf1mcsPIVITPOkdn9FmZCmuzLziR<br />
                 iPS2OFL7OfcW5ikQcBwOzuhpOwcVWBB8SFTPAIOBkFh7BTExABG9Mi84P2rVC2yz<br />
